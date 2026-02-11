@@ -58,3 +58,110 @@ in APPPATH/Views/users.php on line 6.
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:00:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/main_page.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/main_page.php')
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 3 APPPATH/Controllers/Admin.php(14): view('admin/main_page', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:04:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin_layout.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin_layout.php')
+ 2 SYSTEMPATH/View/View.php(254): CodeIgniter\View\View->render('admin_layout', [], true)
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('admin/index_page', [], true)
+ 4 APPPATH/Controllers/Admin.php(14): view('admin/index_page', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:25 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:54 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:54 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:55 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:55 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:55 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:55 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 19:19:59 --> Error: Call to a member function setCache() on string
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')

@@ -7,42 +7,33 @@ class Admin extends BaseController
     public function index(): string
     {
         $data = [
-            "title"=>"Galvenā lapa",
-            "content"=>"Te nāks saturs"
+            "title"=>"Administrēšana",
+            "content"=>""
         ];
 
-        return view('welcome_message',$data);
+        return view('admin/index_page',$data);
 
     }
-    
-    public function users(): string
-    {
-        return view('users');
-    }
 
-     public function user($id=0): string
+
+    public function login(): string
     {
         $data = [
-            "user_id"=>$id
+            "title"=>"Ielogoties",
+            "content"=>""
         ];
-        
-        return view('users',$data);
+
+        return view('admin/login',$data);
+
     }
 
+    
+   
 
 
 
-     public function posts()
-    {
-        // atriež JSON datus
 
-    $data = [
-        'success' => true,
-        'id'      => 123,
-    ];
-
-    return $this->response->setJSON($data);
-    }
+     
 
 
 
