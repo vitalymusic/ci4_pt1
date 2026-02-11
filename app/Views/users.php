@@ -1,7 +1,11 @@
 <?= $this->extend('main_layout') ?>
 
 <?= $this->section('page_title') ?>
-    Lietotāji
+
+  <?= (isset($user_id) && $user_id !== 0)
+    ? "Lietotājs ar id {$user_id}"
+    : "Lietotāji"; ?>
+
 <?= $this->endSection() ?>
 
 

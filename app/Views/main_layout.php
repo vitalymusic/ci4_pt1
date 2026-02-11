@@ -10,9 +10,7 @@
 <body>
     <header>
         <h1>Hederis</h1>
-        <nav>
-            te būs navigācija
-        </nav>
+        <?=$this->include('nav') ?>
     </header>
     <main>
        

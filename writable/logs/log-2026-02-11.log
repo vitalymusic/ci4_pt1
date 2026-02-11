@@ -1,0 +1,60 @@
+CRITICAL - 2026-02-11 17:32:19 --> TypeError: App\Controllers\Home::posts(): Return value must be of type string, CodeIgniter\HTTP\Response returned
+[Method: GET, Route: posts]
+in APPPATH/Controllers/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->posts()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 17:33:05 --> TypeError: App\Controllers\Home::posts(): Return value must be of type string, CodeIgniter\HTTP\Response returned
+[Method: GET, Route: posts]
+in APPPATH/Controllers/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->posts()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 17:34:26 --> TypeError: App\Controllers\Home::posts(): Return value must be of type App\Controllers\any, CodeIgniter\HTTP\Response returned
+[Method: GET, Route: posts]
+in APPPATH/Controllers/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->posts()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 18:43:00 --> ErrorException: Undefined variable $user_id
+[Method: GET, Route: users]
+in APPPATH/Views/users.php on line 6.
+ 1 APPPATH/Views/users.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', '/Applications/MAMP/htdocs/ci4_pt1/app/Views/users.php', 6)
+ 2 SYSTEMPATH/View/View.php(238): include('/Applications/MAMP/htdocs/ci4_pt1/app/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():235}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Home.php(20): view('users')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->users()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-11 18:43:01 --> ErrorException: Undefined variable $user_id
+[Method: GET, Route: users]
+in APPPATH/Views/users.php on line 6.
+ 1 APPPATH/Views/users.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', '/Applications/MAMP/htdocs/ci4_pt1/app/Views/users.php', 6)
+ 2 SYSTEMPATH/View/View.php(238): include('/Applications/MAMP/htdocs/ci4_pt1/app/Views/users.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():235}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('users', [], true)
+ 5 APPPATH/Controllers/Home.php(20): view('users')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->users()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')

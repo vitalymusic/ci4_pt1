@@ -7,3 +7,11 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/users', 'Home::users');
+$routes->get('/users/id/(:num)', 'Home::user/$1');
+
+
+
+$routes->get('/posts', 'Home::posts');
+
+
+
