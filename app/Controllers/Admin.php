@@ -8,9 +8,9 @@ class Admin extends BaseController
     public function __construct()
     {
         $this->session = service('session');
+        $this->db = \Config\Database::connect();
         $this->username = "admin@inbox.lv";
         $this->password = "12345";
-
     }
     
 
@@ -21,10 +21,18 @@ class Admin extends BaseController
            
             return redirect()->to('/login');
         }
-        //  dd($this->checkLogin());
+
+        $dbdata = [];
+        $builder = $this->db->table('pages');
+        $query   = $builder->get();
+        foreach ($query->getResultArray() as $row) {
+            $dbdata[] = $row;
+        }
+
+
         $data = [
             "title"=>"Administrēšana",
-            "content"=>""
+            "pages"=>$dbdata
         ];
 
         return view('admin/index_page',$data);
