@@ -18,6 +18,7 @@ $routes->get('/posts', 'Home::posts');
 // Lapas Admin daļa
 $routes->get('/admin', 'Admin::index');
 $routes->get('/login', 'Admin::login');
+$routes->get('/logout', 'Admin::logout');
 
 
 $routes->post('/login/check','Admin::loginProcess');

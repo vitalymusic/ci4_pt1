@@ -4,18 +4,24 @@ namespace App\Controllers;
 
 class Admin extends BaseController
 {
-    public $username = "admin@inbox.lv";
-    public $password = "12345";
-   
+    
+    public function __construct()
+    {
+        $this->session = service('session');
+        $this->username = "admin@inbox.lv";
+        $this->password = "12345";
+
+    }
+    
 
 
-    public function index(): string
+    public function index()
     {   
-        if($this->checkLogin()){
-            return redirect()->to('login');
+        if(!$this->checkLogin()){
+            // dd($this->checkLogin());
+            return redirect()->to('/login');
         }
         
-        $session = service('session');  
         $data = [
             "title"=>"Administrēšana",
             "content"=>""
@@ -38,22 +44,32 @@ class Admin extends BaseController
     }
 
     public function loginProcess(){
-           $session = service('session');  
+          
 
           $something = $this->request->getPost();
           $result = $this->checkUser($something);
+        
           if($result){
-            $session->set("username",$something["email"]);
-            $session->set("logged_in",true);
+            $this->session->set("username",$something["email"]);
+            $this->session->set("logged_in",true);
+            
             return redirect()->to('admin');
           }else{
-                $session->set("logged_in",false);
-                $session->set("username","");
+                $this->session->set("logged_in",false);
+                $this->session->set("username","");
                 return redirect()->to('login');
           }
-
-        //   dd($session);    
+   
     }
+
+    public function logout(){
+        $this->session->destroy();
+        return redirect()->to('login');
+    }
+
+
+
+
 
     private function checkUser($data): bool {
            if($this->username==$data["email"] && $this->password===$data["password"]){
@@ -67,6 +83,8 @@ class Admin extends BaseController
              $session = service('session');
              if($session->get("logged_in")===false){
                 return false;
+             }else{
+                return true;
              }
     }
 
