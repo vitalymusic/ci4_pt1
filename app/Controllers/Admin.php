@@ -105,11 +105,14 @@ class Admin extends BaseController
     public function loadPageById(int $id){
        
         $builder = $this->db->table('pages');
-        $query   = $builder->get();
+        $query   = $builder
+            ->where('id', $id)
+            ->get();
 
         $data = $query->getResultArray();
+        return $this->response->setJSON($data);
 
-        
+
     }
 
     

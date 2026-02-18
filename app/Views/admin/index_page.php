@@ -23,5 +23,5 @@
 
        <?php endforeach; ?>  
 </table>
-
+<?= $this->include('admin/admin_modal')?>
 <?= $this->endSection() ?>
