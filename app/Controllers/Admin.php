@@ -18,10 +18,10 @@ class Admin extends BaseController
     public function index()
     {   
         if(!$this->checkLogin()){
-            // dd($this->checkLogin());
+           
             return redirect()->to('/login');
         }
-        
+        //  dd($this->checkLogin());
         $data = [
             "title"=>"Administrēšana",
             "content"=>""
@@ -55,16 +55,19 @@ class Admin extends BaseController
             
             return redirect()->to('admin');
           }else{
+                
+          $this->session->setFlashdata('error', 'Nepareiza parole un/vai login');
+
                 $this->session->set("logged_in",false);
                 $this->session->set("username","");
-                return redirect()->to('login');
+                return redirect()->to('/login');
           }
    
     }
 
     public function logout(){
         $this->session->destroy();
-        return redirect()->to('login');
+        return redirect()->to('/login');
     }
 
 
@@ -80,8 +83,8 @@ class Admin extends BaseController
     }
 
     private function checkLogin(){
-             $session = service('session');
-             if($session->get("logged_in")===false){
+            
+             if($this->session->get("logged_in")==false){
                 return false;
              }else{
                 return true;

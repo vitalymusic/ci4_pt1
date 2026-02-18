@@ -17,5 +17,6 @@
         </li>
       </ul>
     </div>
+      <a  href="<?=base_url("logout")?>" class="danger">Logout</a>
   </div>
 </nav>

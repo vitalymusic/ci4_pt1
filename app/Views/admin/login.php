@@ -37,6 +37,11 @@
                             </button>
                         </div>
 
+                        <?php if(isset($_SESSION["error"])):?>
+                            <div class="alert alert-danger text-center m-3">
+                                <?= $_SESSION["error"]?>
+                            </div>     
+                        <?php endif; ?>    
                     </form>
 
                 </div>
