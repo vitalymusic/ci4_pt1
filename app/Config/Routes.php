@@ -19,6 +19,9 @@ $routes->get('/posts', 'Home::posts');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/login', 'Admin::login');
 $routes->get('/logout', 'Admin::logout');
+$routes->get('/admin/editpages/(:num)', 'Admin::loadPageById/$1');
+
+
 
 
 $routes->post('/login/check','Admin::loginProcess');

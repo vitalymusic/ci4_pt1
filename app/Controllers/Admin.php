@@ -100,6 +100,18 @@ class Admin extends BaseController
     }
 
 
+    // editing pages
+
+    public function loadPageById(int $id){
+       
+        $builder = $this->db->table('pages');
+        $query   = $builder->get();
+
+        $data = $query->getResultArray();
+
+        
+    }
+
     
    
 

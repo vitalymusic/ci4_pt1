@@ -14,7 +14,8 @@
     <main>
        
         <div class="container">
-             <h1 class="text-center display1"><?= $this->renderSection('page_title') ?><h1>
+             <h1 class="text-center display1 m-5">
+                <?= $this->renderSection('page_title') ?></h1>
             <?= $this->renderSection('content') ?>
         </div>
     </main>
