@@ -20,6 +20,9 @@ $routes->get('/admin', 'Admin::index');
 $routes->get('/login', 'Admin::login');
 
 
+$routes->post('/login/check','Admin::loginProcess');
+
+
 
 
 

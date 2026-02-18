@@ -1,0 +1,52 @@
+CRITICAL - 2026-02-18 16:22:21 --> ErrorException: Undefined variable $request
+[Method: POST, Route: login/check]
+in APPPATH/Controllers/Admin.php on line 31.
+ 1 APPPATH/Controllers/Admin.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', '/Applications/MAMP/htdocs/ci4_pt1/app/Controllers/Admin.php', 31)
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->loginProcess()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-18 16:31:59 --> Error: Call to undefined function App\Controllers\checkUser()
+[Method: POST, Route: login/check]
+in APPPATH/Controllers/Admin.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->loginProcess()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+CRITICAL - 2026-02-18 16:39:16 --> ErrorException: Constant expression contains invalid operations
+[Method: POST, Route: login/check]
+in APPPATH/Controllers/Admin.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-02-18 16:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-18 16:57:58 --> Error: Call to undefined function App\Controllers\checkLogin()
+[Method: GET, Route: admin/]
+in APPPATH/Controllers/Admin.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/MAMP/htdocs/ci4_pt1/public/index.php')
+DEBUG - 2026-02-18 16:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-18 16:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
