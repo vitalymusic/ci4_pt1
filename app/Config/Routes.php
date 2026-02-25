@@ -21,6 +21,7 @@ $routes->get('/login', 'Admin::login');
 $routes->get('/logout', 'Admin::logout');
 $routes->get('/admin/editpages/(:num)', 'Admin::loadPageById/$1');
 $routes->post('/admin/updatePage', 'Admin::updatePage');
+$routes->post('/admin/createPage', 'Admin::createPage');
 
 
 

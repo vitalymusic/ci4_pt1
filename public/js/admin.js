@@ -8,9 +8,8 @@ $(document).ready(()=>{
         $.get(e.target.href,(data)=>{
             console.log(data[0].page_name);
             $('.edit_page_title').text("Redigēt sadaļu: "+data[0].page_name);
-            if($('.insert_page_btn')){
-                $('.insert_page_btn').addClass("save_page_btn").removeClass("insert_page_btn");
-            }
+            $('.insert_page_btn').hide();
+            $('.save_page_btn').show();
               
             $('#page_name').val(data[0].page_name);
             $('#page_content').val(data[0].page_content);
@@ -42,7 +41,9 @@ $(document).ready(()=>{
 
     $('.create_page_btn').click(()=>{
             $('.edit_page_title').text("Pievienot jaunu sadaļu");
-            $('.save_page_btn').addClass("insert_page_btn").removeClass("save_page_btn");
+            $('.insert_page_btn').show();
+            $('.save_page_btn').hide();
+            $('#page-form').trigger("reset");
             $('#pagesModal').modal('show');
 
     })
@@ -54,7 +55,7 @@ $(document).ready(()=>{
             if(resp.page_save=="success"){
                     
                     $('#pagesModal').modal('hide');
-                    $('#page-form').trigger("reset");
+                   
                     $('#pagesModal').on('hidden.bs.modal', function () {
                         location.reload();
                     }); 

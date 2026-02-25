@@ -133,6 +133,22 @@ class Admin extends BaseController
                 return $this->response->setJSON(["error"=>Error]);
            }
     }
+    public function createPage(){
+         $formData = $this->request->getPost();
+           $data = [
+               'page_name'=> $formData["page_name"],
+               'page_content'=> $formData["page_content"]
+           ]; 
+           try{
+                $builder = $this->db->table('pages');
+                $query   = $builder
+                     ->insert($data); 
+                return $this->response->setJSON(["page_save"=>"success"]);
+           }
+           catch(Error){
+                return $this->response->setJSON(["error"=>Error]);
+           }
+    }
 
     
    

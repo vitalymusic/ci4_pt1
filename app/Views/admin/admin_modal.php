@@ -15,7 +15,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary save_page_btn">Save changes</button>
+        <button type="button" class="btn btn-primary save_page_btn">Saglabāt izmaiņas</button>
+        <button type="button" class="btn btn-primary insert_page_btn">Pievienot</button>
       </div>
     </div>
   </div>
