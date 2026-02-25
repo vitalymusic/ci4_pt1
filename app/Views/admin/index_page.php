@@ -6,7 +6,18 @@
 
 
 <?= $this->section('content') ?>
-
+   <div class="m-3">
+      
+         <button
+            type="button"
+            name=""
+            id=""
+            class="btn btn-secondary create_page_btn"
+         >
+            + Pievienot sadaļu
+         </button>
+      
+   </div>
 <table class="table table-bordered">
       <tr>
 

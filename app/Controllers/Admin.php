@@ -117,9 +117,21 @@ class Admin extends BaseController
 
 
     public function updatePage(){
-         $something = $this->request->getPost();
-         return $this->response->setJSON(["page_save"=>"success","data"=>$something]);
-            
+         $formData = $this->request->getPost();
+           $data = [
+               'page_name'=> $formData["page_name"],
+               'page_content'=> $formData["page_content"]
+           ]; 
+           try{
+                $builder = $this->db->table('pages');
+                $query   = $builder
+                     ->where('id',  $formData["id"])
+                     ->update($data); 
+                return $this->response->setJSON(["page_save"=>"success"]);
+           }
+           catch(Error){
+                return $this->response->setJSON(["error"=>Error]);
+           }
     }
 
     
