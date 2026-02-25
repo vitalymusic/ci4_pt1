@@ -29,6 +29,7 @@
             <td><?=$page["page_date"]?></td>
             <td>
                <a href="<?=base_url("/admin/editpages/{$page["id"]}")?>" type="button" class="btn btn-primary editBtn">Rediģēt</a>
+               <a href="<?=base_url("/admin/deletepage/{$page["id"]}")?>" type="button" class="btn btn-danger delBtn">Dzēst</a>
             </td>
          </tr>
 

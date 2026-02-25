@@ -73,7 +73,17 @@ $(document).ready(()=>{
 
     // esošās sadaļas dzēšana
 
-
+    $('.delBtn').click((e)=>{
+        e.preventDefault();
+        if(confirm("Tiešām izdzēst?")){
+            $.get(e.target.href,(resp)=>{
+                if(resp.page_delete=="success"){
+                        location.reload();
+                }
+            })
+        }
+       
+    })
 
 
 

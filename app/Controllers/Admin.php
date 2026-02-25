@@ -150,6 +150,20 @@ class Admin extends BaseController
            }
     }
 
+    public function deletePageById(int $id){
+        try{
+
+        $builder = $this->db->table('pages');
+        $query   = $builder
+            ->where('id', $id)
+            ->delete();
+            return $this->response->setJSON(["page_delete"=>"success"]);
+        }
+        catch(Error){
+            return $this->response->setJSON(["error"=>Error]);
+        }
+    }
+
     
    
 
