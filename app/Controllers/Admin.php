@@ -115,6 +115,13 @@ class Admin extends BaseController
 
     }
 
+
+    public function updatePage(){
+         $something = $this->request->getPost();
+         return $this->response->setJSON(["page_save"=>"success","data"=>$something]);
+            
+    }
+
     
    
 

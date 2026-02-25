@@ -17,7 +17,7 @@
             <td><?=$page["page_name"]?></td>
             <td><?=$page["page_date"]?></td>
             <td>
-               <a href="<?=base_url("/admin/editpages/{$page["id"]}")?>" type="button" class="btn btn-primary">Rediģēt</a>
+               <a href="<?=base_url("/admin/editpages/{$page["id"]}")?>" type="button" class="btn btn-primary editBtn">Rediģēt</a>
             </td>
          </tr>
 
