@@ -25,6 +25,9 @@ public function uploadForm(){
 
 public function uploadPhoto(){
         $img = $this->request->getFile('file');
+        if($img->getMimeType() !=="image/png"){
+               return redirect()->to('gallery');
+        }
         $img->move(FCPATH . 'uploads', $img->getName());
         
          $data = [
@@ -34,7 +37,7 @@ public function uploadPhoto(){
                 $builder = $this->db->table('images');
                 $query   = $builder
                      ->insert($data); 
-                return $this->response->setJSON(["page_save"=>"success"]);
+                return redirect()->to('gallery');
            }
            catch(Error){
                 return $this->response->setJSON(["error"=>Error]);
