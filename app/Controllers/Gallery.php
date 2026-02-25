@@ -7,6 +7,7 @@ class Gallery extends BaseController
 
 public function index(){
     // Parādīt visu galeriju
+    return view('admin/gallery_index',['title'=>"Bilžu galerija"]);
 
 
 }
@@ -18,7 +19,7 @@ public function uploadForm(){
 }
 
 public function uploadPhoto(){
-
+    
 
 
 }

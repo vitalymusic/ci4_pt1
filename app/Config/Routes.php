@@ -32,6 +32,13 @@ $routes->post('/login/check','Admin::loginProcess');
 
 
 
+// Bilžu galerija
+$routes->get('/gallery', 'Gallery::index');
+$routes->get('/gallery/form', 'Gallery::uploadForm');
+$routes->post('/gallery/uploadphoto', 'Gallery::uploadPhoto');
+
+
+
 
 
 

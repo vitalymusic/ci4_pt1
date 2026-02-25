@@ -7,8 +7,11 @@
 
 
 <?= $this->section('content') ?>
-    <!-- Upload form -->
-    
+    <form action="/gallery/uploadphoto" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <button type="submit">Ielādēt</button>
+    </form>
+
 
 <?= $this->endSection() ?>
 
