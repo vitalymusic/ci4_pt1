@@ -19,8 +19,11 @@ public function uploadForm(){
 }
 
 public function uploadPhoto(){
-    
+        $img = $this->request->getFile('file');
+        $filepath = FCPATH . 'uploads/' . $img->store();
 
+        dd($filepath);
+        
 
 }
 }
